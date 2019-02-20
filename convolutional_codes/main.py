@@ -23,10 +23,13 @@ n_bits_per_frame = 1000
 # generating matrix
 G = [[1, 0, 1], [1, 1, 1]]
 
-# Eb/N0's (in dBs) to be tested
-Eb_N0s_dBs = list(range(12))
+# Eb/N0's (in dBs) to be tested (this is just an example, a different range can be explored)
+Eb_N0s_dBs = np.arange(12)
 
 # ----------------------------- processing
+
+# EbN0s are converted to natural units
+Eb_N0s = 10 **(Eb_N0s_dBs / 10)
 
 # a `numpy` array to store every computed BER [with/without coding,EbN0,frame]
 BER = np.empty((2, len(Eb_N0s_dBs), len(n_frames)))
@@ -43,10 +46,7 @@ for i_frame in range(n_frames):
 	encoded_sequence = encoding.conv_encoding(G, sequence)
 
 	# for every EbN0 to be tested...
-	for i_ebn0, ebn0_dbs in enumerate(Eb_N0s_dBs):
-
-		# the EbN0 is converted to natural units
-		ebn0 = 10**(ebn0_dbs/10)
+	for i_ebn0, ebn0 in enumerate(Eb_N0s):
 
 		# ================= *with* coding
 

@@ -1,4 +1,4 @@
-def conv_encoding(G, sequence):
+def conv_encoding(G, sequences):
 
 	# TODO
 	pass
