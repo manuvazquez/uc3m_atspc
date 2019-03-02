@@ -28,7 +28,7 @@ Eb_N0s_dBs = list(range(12))
 
 # ----------------------------- processing
 
-# a `numpy` array to store every computed BER [with/without coding,EbN0,frame]
+# a `numpy` array to store every computed BER [<with/without coding>, <EbN0>, <frame>]
 BER = np.empty((2, len(Eb_N0s_dBs), len(n_frames)))
 
 # for every simulated frame...
