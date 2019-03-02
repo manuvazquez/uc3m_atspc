@@ -1,4 +1,4 @@
-def binary_symmetric(sequence, Pe):
+def binary_symmetric(sequences, Pe):
 
 	# TODO
 	pass
