@@ -10,15 +10,15 @@ import channel
 import decoding
 import aux
 
-sequence = None
-
 # ----------------------------- parameters
 
+# the specific values given below are just examples, and you can try different ones
+
 # number of simulated frames (realizations of the transmission)
-n_frames = 5
+n_frames = 100
 
 # length of each frame
-n_bits_per_frame = 1000
+n_bits_per_frame = 10000
 
 # generating matrix
 G = [[1, 0, 1], [1, 1, 1]]
