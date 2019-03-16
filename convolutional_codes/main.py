@@ -32,7 +32,7 @@ Eb_N0s_dBs = np.arange(12)
 Eb_N0s = 10 ** (Eb_N0s_dBs / 10)
 
 # a `numpy` array to store every computed BER [<with/without coding>, <EbN0>, <frame>]
-BER = np.empty((2, len(Eb_N0s_dBs), len(n_frames)))
+BER = np.empty((2, len(Eb_N0s_dBs), n_frames))
 
 # for every simulated frame...
 for i_frame in range(n_frames):
