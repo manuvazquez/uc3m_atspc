@@ -15,7 +15,7 @@ def hard(sequences, G):
 	# TODO: ...and the possible inputs
 	# inputs =
 
-	# TODO: number of Viterbi stages is computed from the length of the sequence(s) and the number of outputs
+	# TODO: number of Viterbi stages is computed from the length of the sequence(s) and the length of the header
 	# n_stages =
 
 	# TODO: initialization

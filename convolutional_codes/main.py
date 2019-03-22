@@ -28,6 +28,9 @@ Eb_N0s_dBs = np.arange(12)
 
 # ----------------------------- processing
 
+# TODO: the rate of the code must be obtained
+# code_rate =
+
 # EbN0s are converted to natural units
 Eb_N0s = 10 ** (Eb_N0s_dBs / 10)
 
@@ -51,7 +54,7 @@ for i_frame in range(n_frames):
 		# ================= *with* coding
 
 		# the probability of error is computed from the EbN0
-		Pe = aux.q_function(math.sqrt(ebn0))
+		Pe = aux.q_function(math.sqrt(2 * code_rate * ebn0))
 
 		# transmission is simulated
 		received_sequence = channel.binary_symmetric(encoded_sequence, Pe)
