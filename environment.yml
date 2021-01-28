@@ -2,10 +2,7 @@ name: at
 channels:
   - defaults
 dependencies:
-  - nodejs
   - python=3
   - ipywidgets
-  - jupyterlab
   - bokeh
   - ipycanvas
-prefix: /home/manu/anaconda3/envs/at
