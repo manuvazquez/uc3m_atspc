@@ -1,0 +1,8 @@
+name: conv
+channels:
+  - defaults
+dependencies:
+  - python=3
+  - numpy
+  - matplotlib
+  - scipy
