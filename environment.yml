@@ -6,3 +6,5 @@ dependencies:
   - ipywidgets
   - bokeh
   - ipycanvas
+  - plotly
+  - anywidget
