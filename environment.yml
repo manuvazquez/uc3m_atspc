@@ -8,3 +8,4 @@ dependencies:
   - ipycanvas
   - plotly
   - anywidget
+  - voila
